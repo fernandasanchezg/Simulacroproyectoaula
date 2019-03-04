@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>LA LIGA</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="index.css">
+    <script src="main.js"></script>
+    <style>
+        #btneditar{
+            display:none
+        }
+    </style>
+</head>
+
+<body>
+    <div id="crudliga">
+        <h1>
+            Ligas
+        </h1>
+        <form >
+            <input type="hidden" id="idliga"/>
+            <input type="text" id="nombreliga" placeholder="cual es el nombre de la Liga?"/>
+            <select name="País" id="paisliga">
+                <option value="">¿País?</option>
+                <option value="España">España</option>
+                <option value="Inglaterra">Inglaterra</option>
+            </select>
+            <input type="button" id="btnañadir" value="Guardar" onclick="añadir()"/>
+            <input type="button" id="btneditar" value="Modificar" onclick="update()"/>
+         </form>
+         <table id="cuerpo">
+             <thead>
+                 <tr>
+                     <td>
+                         Nombre Liga
+                     </td>
+                     <td>
+                         Pais Liga
+                     </td>
+                 </tr>
+             </thead>
+             <tbody id="contenedor">
+
+             </tbody>
+         </table>
+         <script src="index.js">
+             
+         </script>
+         <a href="index1.html" target="_blank">
+             CRUD equipos
+         </a>
+        
+    </div>
+</body>
+</html>

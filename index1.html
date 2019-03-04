@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Jugadores</title>
+    <style>
+        #btnEditarJugador{
+            display:none
+        }
+    </style>
+</head>
+<body>
+   
+       <h1>
+           CRUD Jugadores
+       </h1>
+       <form>
+           <input type="hidden" id="idJugador"/>
+           <input type="text" id="nombreJugador" placeholder="Ingrese el nombre" />
+           <input type="text" id="edadJugador" placeholder="Ingrese la edad" />
+           <input type="text" id="equipoJugador" placeholder="Ingrese el equipo" />
+           <input type="text" id="golesJugador" placeholder="Ingrese goles" />
+           <select name="posicionjugador" id="posicionJugador">
+               <option value="">qué posicion?</option>
+               <option value="portero">Portero</option>
+               <option value="defensa">Defensa</option>
+               <option value="lateral">Lateral</option>
+               <option value="centrocampista">Centrocampista</option>
+               <option value="delantero">Delantero</option>
+           </select>
+
+            <input type="button" id="btnNuevoJugador" value="guardar" onclick="añadirJugador()" />
+            <input type="button" id="btnEditarJugador" value="Modificar" onclick="editarJugador()" />
+       </form>
+
+       <table id="cuerpoJugador">
+           <thead>
+               <tr>
+                   <td>
+                       Nombre
+                   </td>
+                   <td>
+                       Edad
+                   </td>
+                   <td>
+                       Equipo
+                   </td>
+                   <td>
+                       Goles
+                   </td>
+                   <td>
+                       Posicion
+                   </td>
+                   <td colspan="2">Operaciones</td>
+               </tr>
+           </thead>
+           <tbody id="contenedorJugador">
+           </tbody>
+
+       </table>
+     <script src="index1.js"> </script>
+   
+</body>
+</html>
