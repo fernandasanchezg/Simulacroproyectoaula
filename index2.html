@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>LA LIGA</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="index.css">
+    <style>
+        #btneditarEquipo{
+            display:none
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>
+            Equipos
+        </h1>
+        <form >
+            <input type="hidden" id="idequipo"/>
+            <input type="text" id="nombreequipo" placeholder="cual es el nombre del equipo?"/>
+            <input type="text" id="nombretecnico" placeholder="cual es el nombre del entrenador?"/>
+            <select name="País" id="paisequipo">
+                <option value="">¿País?</option>
+                <option value="España">España</option>
+                <option value="Inglaterra">Inglaterra</option>
+            </select>
+            <input type="button" id="btnnuevoEquipo" value="Guardar" onclick="añadirEquipos()"/>
+            <input type="button" id="btneditarEquipo" value="Modificar" onclick="editarEquipo()"/>
+         </form>
+         <table id="cuerpoEquipo">
+             <thead>
+                 <tr>
+                     <td>
+                         Nombre equipo
+                     </td>
+                     <td>
+                         nombre tecnico
+                     </td>
+                     <td>
+                        pais equipo
+                    </td>
+                 </tr>
+             </thead>
+             <tbody id="contenedorEquipo">
+
+             </tbody>
+         </table>
+         <script src="index2.js">
+             
+         </script>
+         
+        
+    </div>
+</body>
+</html>
